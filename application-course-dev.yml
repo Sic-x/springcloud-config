@@ -8,11 +8,11 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:1010/eureka/
-      #注册中心的注册地址 ，其他微服务需要向这个地址注册
+      #娉ㄥ唽涓績鐨勬敞鍐屽湴鍧� 锛屽叾浠栧井鏈嶅姟闇�瑕佸悜杩欎釜鍦板潃娉ㄥ唽
 spring:
   application:
     name: course-server
-#集成mybatis-plus
+#闆嗘垚mybatis-plus
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     username: root
