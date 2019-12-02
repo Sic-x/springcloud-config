@@ -1,0 +1,23 @@
+server:
+  port: 2020
+eureka:
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+    instance-id: course-server:2020
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1010/eureka/
+      #注册中心的注册地址 ，其他微服务需要向这个地址注册
+spring:
+  application:
+    name: system-server
+#集成mybatis-plus
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    username: root
+    password: 123456
+    url: jdbc:mysql:///hrm-systemmanage
+    driver-class-name: com.mysql.jdbc.Driver
+mybatis-plus:
+  mapper-locations: classpath:com/xmh/hrm/mapper/*Mapper.xml
