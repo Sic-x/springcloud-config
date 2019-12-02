@@ -11,13 +11,13 @@ eureka:
       #注册中心的注册地址 ，其他微服务需要向这个地址注册
 spring:
   application:
-    name: system-server
+    name: course-server
 #集成mybatis-plus
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     username: root
     password: 123456
-    url: jdbc:mysql:///hrm-systemmanage
+    url: jdbc:mysql:///hrm-course
     driver-class-name: com.mysql.jdbc.Driver
 mybatis-plus:
   mapper-locations: classpath:com/xmh/hrm/mapper/*Mapper.xml
