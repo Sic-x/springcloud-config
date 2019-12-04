@@ -19,3 +19,4 @@ zuul:
   routes:
     system-server: "/sys/**"   #systemmanage-server 这个服务使用 /systemmanage路径访问
     course-server: "/course/**"   #course-server 这个服务使用 /course路径访问
+    redis-server: "/redis/**"
