@@ -1,0 +1,17 @@
+server:
+  port: 2050
+  max-http-header-size: 2000000
+  tomcat:
+    max-http-header-size: 2000000
+eureka:
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+    instance-id: es-server:2050
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1010/eureka/
+      #注册中心的注册地址 ，其他微服务需要向这个地址注册
+spring:
+  application:
+    name: es-server
