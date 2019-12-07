@@ -1,0 +1,14 @@
+server:
+  port: 2040
+eureka:
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+    instance-id: redis-server:2040
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1010/eureka/
+      #注册中心的注册地址 ，其他微服务需要向这个地址注册
+spring:
+  application:
+    name: fastdfs-server
