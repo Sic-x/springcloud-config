@@ -4,7 +4,7 @@ eureka:
   instance:
     hostname: localhost
     prefer-ip-address: true
-    instance-id: redis-server:2040
+    instance-id: fastdfs-server:2040
   client:
     serviceUrl:
       defaultZone: http://localhost:1010/eureka/
