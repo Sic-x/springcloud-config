@@ -1,5 +1,8 @@
 server:
   port: 2010
+  max-http-header-size: 2000000
+  tomcat:
+    max-http-header-size: 2000000
 eureka:
   instance:
     hostname: localhost

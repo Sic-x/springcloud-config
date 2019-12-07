@@ -1,5 +1,8 @@
 server:
   port: 2020
+  max-http-header-size: 2000000
+  tomcat:
+    max-http-header-size: 2000000
 eureka:
   instance:
     hostname: localhost
@@ -21,3 +24,6 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
 mybatis-plus:
   mapper-locations: classpath:com/xmh/hrm/mapper/*Mapper.xml
+feign:
+  hystrix:
+      enabled: true #开启Hystrix支持
