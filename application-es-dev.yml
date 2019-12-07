@@ -15,3 +15,7 @@ eureka:
 spring:
   application:
     name: es-server
+  data:
+  elasticsearch:
+    cluster-name: elasticsearch
+    cluster-nodes: 127.0.0.1:9300
