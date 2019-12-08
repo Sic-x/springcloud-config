@@ -17,6 +17,8 @@ spring:
     name: zuul-server
 #配置zuul
 zuul:
+  debug
+    request: true
   ignoredServices: "*" #忽略(不准)服务名方式访问
   prefix: "/hrm" #统一访问路径的前缀
   routes:
