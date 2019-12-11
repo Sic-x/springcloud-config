@@ -26,6 +26,7 @@ zuul:
     redis-server: "/redis/**"
     fastdfs-server: "/fastdfs/**"
     es-server: "/es/**"
+    pager-server: "/pager/**"
   host:
     connect-timeout-millis: 5000
     socket-timeout-millis: 50000
