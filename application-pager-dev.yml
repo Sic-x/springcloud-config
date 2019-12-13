@@ -13,6 +13,14 @@ eureka:
       defaultZone: http://localhost:1010/eureka/
       #注册中心的注册地址 ，其他微服务需要向这个地址注册
 spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    listener:
+      simple:
+        acknowledge-mode: manual
   application:
     name: pager-server
 #集成mybatis-plus
@@ -28,9 +36,9 @@ mybatis-plus:
 
 
 
-#feign:
-#  hystrix:
-#      enabled: true #开启Hystrix支持
+feign:
+  hystrix:
+    enabled: true #开启Hystrix支持
 #=======================================================================
 #指向配置中心
 #spring:
