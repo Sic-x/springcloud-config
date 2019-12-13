@@ -27,6 +27,7 @@ zuul:
     fastdfs-server: "/fastdfs/**"
     es-server: "/es/**"
     pager-server: "/pager/**"
+    page-proxy-server: "/pageproxy/**"
   host:
     connect-timeout-millis: 5000
     socket-timeout-millis: 50000
