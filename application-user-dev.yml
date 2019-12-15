@@ -1,0 +1,26 @@
+server:
+  port: 2080
+  max-http-header-size: 2000000
+  tomcat:
+    max-http-header-size: 2000000
+eureka:
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+    instance-id: user-server:2080
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1010/eureka/
+      #注册中心的注册地址 ，其他微服务需要向这个地址注册
+spring:
+  application:
+    name: user-server
+#集成mybatis-plus
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    username: root
+    password: 123456
+    url: jdbc:mysql:///hrm-user
+    driver-class-name: com.mysql.jdbc.Driver
+mybatis-plus:
+  mapper-locations: classpath:cn/itsource/hrm/mapper/*Mapper.xml

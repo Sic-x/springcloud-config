@@ -28,6 +28,7 @@ zuul:
     es-server: "/es/**"
     pager-server: "/pager/**"
     page-proxy-server: "/pageproxy/**"
+    pager-user:"/user/**"
   host:
     connect-timeout-millis: 5000
     socket-timeout-millis: 50000
